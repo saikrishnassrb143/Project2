@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="aqua">
+<form action="./add" method="post">
+    {% csrf_token %}
+    Enter Fno:<input type="text" name="t1"><br>
+    Enter Sno:<input type="text" name="t2"><br>
+    <input type="submit" value="add">
+</form>
+<form action="./sub" method="post">
+    {% csrf_token %}
+    Enter Fno:<input type="text" name="t1"><br>
+    Enter Sno:<input type="text" name="t2"><br>
+    <input type="submit" value="sub">
+</form>
+<form action="./div" method="post">
+    {% csrf_token %}
+    Enter Fno:<input type="text" name="t1"><br>
+    Enter Sno:<input type="text" name="t2"><br>
+    <input type="submit" value="div">
+</form>
+<form action="./mul" method="post">
+    {% csrf_token %}
+    Enter Fno:<input type="text" name="t1"><br>
+    Enter Sno:<input type="text" name="t2"><br>
+    <input type="submit" value="mul">
+</form>
+
+</body>
+</html>
